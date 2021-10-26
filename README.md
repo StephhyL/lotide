@@ -7,3 +7,4 @@
 * tail() - returns a new array that contains all the elements of an inputted array expect for index0 ("the head of the inputted array")
 * eqArrays() - returns assertion after comparing two arrays (utilitzes assertEqual() for assertion)
 * assertArraysEqual() - returns a console.log with appropriate assert message after comparing two arrays 
+* without() - returns a new array after removing items from a source array (takes in two arrays as parameters/arguments)
