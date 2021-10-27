@@ -9,4 +9,6 @@
 * assertArraysEqual() - returns a console.log with appropriate assert message after comparing two arrays 
 * without() - returns a new array after removing items from a source array (takes in two arrays as parameters/arguments)
 * withoutAlternative() - same as without() but alternative way of writing the code for it
-* flatten.() - condenses nested arrays (one nested level in) into a one level array
+* withoutAlternative2() - an even more refracted way of wrting without()
+* flatten() - condenses nested arrays (one nested level in) into a one level array
+* middle () - returns the middle element(s) of an array (as an array; also contains assertion message)
