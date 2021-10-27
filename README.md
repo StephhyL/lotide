@@ -12,3 +12,4 @@
 * withoutAlternative2() - an even more refracted way of wrting without()
 * flatten() - condenses nested arrays (one nested level in) into a one level array
 * middle () - returns the middle element(s) of an array (as an array; also contains assertion message)
+* countOnly() - returns an object that is the result of counting certain items in an array (based on criteria listed in another object)
