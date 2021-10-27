@@ -15,3 +15,4 @@
 * countOnly() - returns an object that is the result of counting certain items in an array (based on criteria listed in another object)
 * countLetters() - returns an object that is the result of counting letters in a sentence (no spaces)
 * letterPositions() - returns an object that contains keys (letters in sentence) and values (indexes in which they appear in sentence)
+* findKeyByValue() - returns the name of the key that contains the value that is the same as an inputted one
