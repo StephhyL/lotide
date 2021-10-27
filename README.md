@@ -8,3 +8,5 @@
 * eqArrays() - returns assertion after comparing two arrays (utilitzes assertEqual() for assertion)
 * assertArraysEqual() - returns a console.log with appropriate assert message after comparing two arrays 
 * without() - returns a new array after removing items from a source array (takes in two arrays as parameters/arguments)
+* withoutAlternative() - same as without() but alternative way of writing the code for it
+* flatten.() - condenses nested arrays (one nested level in) into a one level array

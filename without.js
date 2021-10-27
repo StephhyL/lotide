@@ -26,7 +26,7 @@ const eqArrays = (arr1, arr2) => {
 
 const without = (sourceArr, removeItems) => {
   let newSource = [...sourceArr];
-  let withoutArr = []; 
+  let withoutArr = [];
   
   for (let i = 0; i < newSource.length; i++) {
     for (let element of removeItems) {
@@ -43,5 +43,6 @@ const without = (sourceArr, removeItems) => {
   }
   return withoutArr;
 };
-  
-assertArraysEqual(without(["hello", 1, 4, "yes"], [4, "hello"]), [1, "yes"]);
+
+let words3 = ['1', 'a', 3]
+console.log(without(words3, ['a']));
