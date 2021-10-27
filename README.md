@@ -13,4 +13,5 @@
 * flatten() - condenses nested arrays (one nested level in) into a one level array
 * middle () - returns the middle element(s) of an array (as an array; also contains assertion message)
 * countOnly() - returns an object that is the result of counting certain items in an array (based on criteria listed in another object)
-* countLetters() - returns an object that is the result of counting letters in a sentence
+* countLetters() - returns an object that is the result of counting letters in a sentence (no spaces)
+* letterPositions() - returns an object that contains keys (letters in sentence) and values (indexes in which they appear in sentence)
