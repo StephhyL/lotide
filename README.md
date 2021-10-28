@@ -18,3 +18,4 @@
 * findKeyByValue() - returns the name of the key that contains the value that is the same as an inputted one
 * eqObject() - compares if two objects are the same assuming all values are arrays or primitive data (i.e. no values are objects)
 * assertObjectsEqual() - prints an assertion method after comparing two objects
+* maps() - loops over elements of an array, uses each element as a parameter for a CB function, pushes item into a new array
