@@ -1,16 +1,3 @@
-const assertArraysEqual = (arr1, arr2) => {
-  if (arr1.length !== arr2.length) {
-    console.log(`🛑🛑🛑Assertion Failed: ${arr1} !== ${arr2}.`);
-  }
-  
-  for (let i = 0; i < arr1.length; i++) {
-    if (arr1[i] !== arr2[i]) {
-      console.log(`🛑🛑🛑Assertion Failed: ${arr1} !== ${arr2}.`);
-    }
-  }
-  console.log(`✅✅✅Assertion Passed: ${arr1} === ${arr2}.`);
-};
-
 const eqArrays = (arr1, arr2) => {
   if (arr1.length !== arr2.length) {
     return false;
@@ -22,6 +9,11 @@ const eqArrays = (arr1, arr2) => {
     }
   }
   return true;
+};
+
+const assertArraysEqual = (arr1, arr2) => {
+  eqArrays(arr1, arr2)? console.log(`✅✅✅Assertion Passed: ${arr1} === ${arr2}.`)
+  : console.log(`🛑🛑🛑Assertion Failed: ${arr1} !== ${arr2}.`);
 };
 
 const without = (sourceArr, removeItems) => {
@@ -44,5 +36,6 @@ const without = (sourceArr, removeItems) => {
   return withoutArr;
 };
 
-let words3 = ['1', 'a', 3]
-console.log(without(words3, ['a']));
+// let words3 = ['1', 'a', 3]
+// console.log(without(words3, ['a']));
+// assertArraysEqual(without(words3, ['a']), ['1', 3]);
