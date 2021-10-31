@@ -21,3 +21,4 @@
 * maps(array, callback) - loops over elements of an array, uses each element as a parameter for a CB function, pushes item into a new array
 * findkey(object, callback) - returns key
 * takeUntil(array, callback) - returns elements in an array until the callback(element) is true.
+* eqObjectsRecursion(obj, obj) - compares objects (not just arrays and primitives) and returns true/false.
