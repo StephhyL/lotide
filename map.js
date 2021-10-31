@@ -12,18 +12,25 @@ const words = ["ground", "control", "to", "major", "tom"];
 const results1 = map(words, word => word[0]);
 console.log(results1);
 
-const assertArraysEqual = (arr1, arr2) => {
+const eqArrays = (arr1, arr2) => {
   if (arr1.length !== arr2.length) {
-    return console.log(`🛑🛑🛑Assertion Failed: ${arr1} !== ${arr2}.`);
+    return false;
   }
   
   for (let i = 0; i < arr1.length; i++) {
     if (arr1[i] !== arr2[i]) {
-      return console.log(`🛑🛑🛑Assertion Failed: ${arr1} !== ${arr2}.`);
+      return false;
     }
   }
-  return console.log(`✅✅✅Assertion Passed: ${arr1} === ${arr2}.`);
+  return true;
 };
+
+const assertArraysEqual = (arr1, arr2) => {
+  eqArrays(arr1, arr2)? console.log(`✅✅✅Assertion Passed: ${arr1} === ${arr2}.`)
+  : console.log(`🛑🛑🛑Assertion Failed: ${arr1} !== ${arr2}.`);
+};
+
+
 
 const animals = ['dog', 'hen', 'bird'];
 const num = [1,2,3,4,5];
