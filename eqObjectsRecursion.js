@@ -18,7 +18,7 @@ const eqArrays = (arr1, arr2) => {
 };
 
 
-const eqObjects = function(object1, object2) {
+const eqObjectsRecursion = function(object1, object2) {
   if (Object.keys(object1).length !== Object.keys(object2).length) { // checks # keys in each object via key arrays lengths
     return false;
   }
@@ -36,7 +36,10 @@ const eqObjects = function(object1, object2) {
   return true;
 };
 
-console.log(eqObjects({ a: { z: 1 }, b: 2 }, { a: { z: 1 }, b: 2 })); // => true
-console.log(eqObjects({ a: { y: 0, z: 1 }, b: 2 }, { a: { z: 1 }, b: 2 })); // => false
-console.log(eqObjects({ a: { y: 0, z: 1 }, b: 2 }, { a: 1, b: 2 })); // => false
-console.log(eqObjects({ a: { z: 1, h: { i:78}}, b: 2 }, { a: { z: 1, h: { i:78}}, b: 2 })); // => true
+
+module.exports = eqObjectsRecursion;
+
+// console.log(eqObjects({ a: { z: 1 }, b: 2 }, { a: { z: 1 }, b: 2 })); // => true
+// console.log(eqObjects({ a: { y: 0, z: 1 }, b: 2 }, { a: { z: 1 }, b: 2 })); // => false
+// console.log(eqObjects({ a: { y: 0, z: 1 }, b: 2 }, { a: 1, b: 2 })); // => false
+// console.log(eqObjects({ a: { z: 1, h: { i:78}}, b: 2 }, { a: { z: 1, h: { i:78}}, b: 2 })); // => true

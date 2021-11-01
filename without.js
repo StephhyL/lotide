@@ -36,6 +36,8 @@ const without = (sourceArr, removeItems) => {
   return withoutArr;
 };
 
+module.exports = without;
+
 // let words3 = ['1', 'a', 3]
 // console.log(without(words3, ['a']));
 // assertArraysEqual(without(words3, ['a']), ['1', 3]);

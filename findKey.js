@@ -35,16 +35,19 @@ const findKey = (obj, funcCB) => {
   // return // name of key
 };
 
+module.exports = findKey;
 
 // oject which has keys that have values (that are objects)
 
-const hello = findKey({
-  "Blue Hill": { stars: 1 },
-  "Akaleri":   { stars: 3 },
-  "noma":      { stars: 2 },
-  "elBulli":   { stars: 3 },
-  "Ora":       { stars: 2 },
-  "Akelarre":  { stars: 3 }
-}, x => x.stars === 2); // => "noma"
+// const hello = findKey({
+//   "Blue Hill": { stars: 1 },
+//   "Akaleri":   { stars: 3 },
+//   "noma":      { stars: 2 },
+//   "elBulli":   { stars: 3 },
+//   "Ora":       { stars: 2 },
+//   "Akelarre":  { stars: 3 }
+// }, x => x.stars === 2); // => "noma"
 
-assertEqual(hello, "noma");
+
+
+// assertEqual(hello, "noma");
